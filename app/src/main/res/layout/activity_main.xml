@@ -9,10 +9,15 @@
         android:scaleType="centerCrop"
         android:src="@drawable/bg"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"/>
+
 
 
     <LinearLayout
+        android:padding="@dimen/padding"
         android:background="#82ffffff"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -41,6 +46,7 @@
                 android:src="@mipmap/ic_user" />
 
             <EditText
+                android:id="@+id/edtUser"
                 android:textColor="@color/colorPrimary"
                 android:textColorHint="@color/colorPrimaryDark"
                 android:layout_width="match_parent"
@@ -64,18 +70,21 @@
                 android:src="@mipmap/ic_password" />
 
             <EditText
-                android:textColor="@color/colorPrimaryDark"
-                android:textColorHint="@color/colorPrimary"
+                android:id="@+id/edtPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/password1"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimary" />
 
         </LinearLayout>
 
         <!--This is New Register-->
 
         <TextView
+            android:clickable="true"
+            android:id="@+id/txtNewRegister"
             android:textColor="@color/colorPrimaryDark"
             android:textStyle="bold"
             android:textSize="@dimen/h2"
@@ -87,6 +96,9 @@
 
 
     <Button
+        android:id="@+id/btnLogin"
+        android:textColor="@color/textColorPrimary"
+        android:background="@color/colorPrimaryDark"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
